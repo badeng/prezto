@@ -11,3 +11,22 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias qw="twistd -no web --path=."
+
+alias mogujie="cd /data/app/www.mogujie.com"
+alias webdemo="cd /data/app/webdemo"
+alias dev="cd ~/dev"
+
+alias ssh612="ssh nanzhu@10.0.6.12"
+alias ssh32="ssh root@10.0.16.32 -p 10022"
+alias ssh125="ssh nanzhu@10.11.2.220 -p 10022"
+alias ssh46="ssh nanzhu@10.11.2.46 -p 10022"
+alias ssh145="ssh -p10022 nanzhu@192.168.5.145"
+
+alias chrome="open -a Google\ Chrome\ Canary --args --disable-web-security"
+
+export GREP_COLOR="1;31"
+
+# WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+
