@@ -12,7 +12,8 @@ fi
 
 # Customize to your needs...
 
-alias qw="twistd -no web --path=."
+#alias qw="twistd -no web --path=."
+alias qw="http-server ./"
 
 alias mogujie="cd /data/app/www.mogujie.com"
 alias webdemo="cd /data/app/webdemo"
@@ -23,10 +24,27 @@ alias ssh32="ssh root@10.0.16.32 -p 10022"
 alias ssh125="ssh nanzhu@10.11.2.220 -p 10022"
 alias ssh46="ssh nanzhu@10.11.2.46 -p 10022"
 alias ssh145="ssh -p10022 nanzhu@192.168.5.145"
+alias ssh81="ssh -p 10022 nanzhu@10.11.3.81"
+alias ssh23="ssh -p 10022 nanzhu@10.13.0.23"
 
 alias chrome="open -a Google\ Chrome\ Canary --args --disable-web-security"
+alias webpack="webpack --progress -c"
+
+alias fday="cd /data/app/gitlab/fday"
+alias fdaypack="fday && webpack"
 
 export GREP_COLOR="1;31"
+export HOMEBREW_GITHUB_API_TOKEN="0ce8cd6e452284056778845417bee90e4bd62421"
+
+function start_qujing {
+    export http_proxy='http://theironislands.f.getqujing.net:36392'
+    export HTTPS_PROXY='http://theironislands.f.getqujing.net:36392'
+}
+
+function stop_qujing {
+    export http_proxy=''
+    export HTTPS_PROXY=''
+}
 
 # WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 

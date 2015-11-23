@@ -24,9 +24,9 @@ function prompt_steeef_precmd {
 
   vcs_info 'prompt'
 
-  if (( $+functions[python-info] )); then
-    python-info
-  fi
+  #if (( $+functions[python-info] )); then
+  #  python-info
+  #fi
 }
 
 function prompt_steeef_setup {
@@ -64,7 +64,7 @@ function prompt_steeef_setup {
 
   # Define prompts.
   PROMPT="
-%F{magenta}%*%f %U%F{green}%~%f%u "'${vcs_info_msg_0_}'"
+%B%F{magenta}%*%f%b %U%F{green}%~%f%u "'${vcs_info_msg_0_}'"
 🐳  %F{yellow}%n%f %F{red}❯%f%F{yellow}❯%f%F{green}❯%f "
   RPROMPT=''
 }
